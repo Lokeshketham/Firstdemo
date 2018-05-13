@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 27 Sep, 2017 11:05:29 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+   <class name="com.cp.entities.Resourceallocation" table="RESOURCEALLOCATION">
+    <composite-id name="id">
+    <key-property name="resourceno" column="RESOURCE_NO"/>
+    <key-property name="projectno" column="PROJECT_NO"/>
+    </composite-id>
+    <property name="resourcestartdate" column="RESOURCESTART_DT"/>
+    <property name="resourceenddate" column="RESOURCEEND_DT"/>
+    <property name="role" column="ROLE"/>
+    <property name="projectpercentage" column="PROJECTPERCENTAGE"/>
+</class>
+</hibernate-mapping>
